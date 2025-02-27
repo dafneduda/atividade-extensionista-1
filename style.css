@@ -16,6 +16,7 @@ body {
 .menu ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .menu li {
@@ -27,12 +28,18 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.menu a:hover {
+    color: #49ba8f;
+    transform: scale(1.1);
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 20px;
 }
 
@@ -41,8 +48,25 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    max-width: 300px;
-    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    margin: 20px auto;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.content-wrapper img {
+    margin-right: 20px;
+    width: 200px;
+    height: auto;
+    object-fit: contain;
 }
 
 .videos {
@@ -52,13 +76,44 @@ body {
 
 .videos iframe {
     max-width: 100%;
+    height: auto;
+    border: none;
 }
 
 footer {
     background-color: #49ba8f;
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 15px;
     position: relative;
     width: 100%;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo article {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-wrapper img {
+        margin-right: 0;
+        width: 100%;
+        max-width: 300px;
+    }
 }
