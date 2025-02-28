@@ -94,7 +94,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     max-width: 100%;
     margin-bottom: 20px;
-    margin: 100px;
+    margin: 30px;
     text-align: justify;
 }
 
@@ -126,14 +126,14 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
-  }
+}
 
 .infografico h2 {
     color: #c08ea9;
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-align: center;
-  }
+}
 
 .videos {
     text-align: center;
@@ -159,6 +159,42 @@ body {
     font-size: 1.5rem;
     margin-bottom: 20px;
     text-align: center;
+}
+
+.finalizacao {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.finalizacao-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.finalizacao-img {
+    width: 150px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.finalizacao-text {
+    max-width: 600px;
+}
+
+.finalizacao-text h4 {
+    font-size: 30px;
+    color: #c08ea9;
+    margin-bottom: 5px;
+}
+
+.finalizacao-text p {
+    font-size: 20px;
+    color: #7e335b;
 }
 
 footer {
