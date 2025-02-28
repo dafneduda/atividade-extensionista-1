@@ -33,7 +33,7 @@ header p {
     position: relative;
     color: #ffffff;
     z-index: 2;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 1px;
     text-align: center;
     max-width: 90%;
@@ -120,6 +120,21 @@ body {
     border-radius: 10px;
 }
 
+.infografico img {
+    width: 100%;
+    max-width: 724px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+.infografico h2 {
+    color: #c08ea9;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
 .videos {
     text-align: center;
     padding: 20px;
@@ -130,6 +145,20 @@ body {
     height: auto;
     aspect-ratio: 16 / 9;
     border: none;
+}
+
+.videos h2 {
+    color: #c08ea9;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.videos h3 {
+    color: #7e335b;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 footer {
